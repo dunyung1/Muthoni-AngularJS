@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Neutra Text Alt';
+    src: url('../../assets/fonts/Neutra-Text-Alt_32104.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap');
+
+$main-fontType: 'Neutra Text Alt',
+sans-serif;
+$heading-fontType: 'Playfair Display',
+serif;
+
+$aboutcolor: #151515;
+$abouttext: #987362;
+$aboutheading: #9ca473;
+$navbarline: #362d29;
+
+$year-milestones-color: #a3a4a9;
+$yearcolor: #9b766a73;
+$milestonestext: #22252e;
+
+$child-milestones-color: #414152;
+$child-milestones-title: #9292c2;
+$selecteditem: white;
+
+$work-milestones-color: black;
+
+$muthonispeakscolor: #19191b;
+$playcolor: #2c2726;
+$buttoncolor: #201e1f;

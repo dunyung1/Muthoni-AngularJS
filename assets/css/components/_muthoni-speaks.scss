@@ -1,0 +1,70 @@
+.muthoni-speaks {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-image: url(../../assets/images/muthoni-speaks2.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #19191b;
+    overflow: hidden;
+
+    .muthoni-speaks__details {
+        position: absolute;
+        top: 15%;
+        width: 50%;
+        z-index: 2;
+
+        h1 {
+            color: #9ca473;
+            font-size: 32px;
+            font-family: $heading-fontType;
+            padding-top: 72px;
+        }
+
+        h4 {
+            color: #9ca473;
+            letter-spacing: 2px;
+            margin: 20px 0 30px 0;
+        }
+
+        .muthoni-speaks__playlist {
+            width: 80%;
+            padding-top: 24px;
+            
+            .item {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                border-bottom: 1px solid $abouttext;
+                padding: 12px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #9ca473;
+            }
+
+            h2 {
+                color: #9ca473;
+                line-height: 1.6;
+            }
+
+            .series {
+                justify-self: center;
+            }
+
+            .item-none {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .the-cover {
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
