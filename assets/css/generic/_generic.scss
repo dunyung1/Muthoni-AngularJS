@@ -4,5 +4,6 @@
     font-family: $main-fontType;
     font-size: 16px;
     margin: 0;
-    // transition-duration: 500ms;
+    scroll-behavior: smooth;
+    transition-duration: 500ms;
 }

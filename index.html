@@ -7,7 +7,7 @@
     <link rel='stylesheet' type='text/css' href='assets/css/main.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='assets/js/angular.js'></script>
-    <script src='assets/js/angular-route.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
     <script src='assets/js/app.js'></script>
 </head>
 
@@ -15,10 +15,9 @@
 
     <header ng-include=" 'header.html' "></header>
 
-    <main ng-view></main>
+    <ui-view></ui-view>
 
     <script src="https://unpkg.com/simplebar@4.1.0/dist/simplebar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src='assets/js/scrolling.js'></script>
 </body>
 
