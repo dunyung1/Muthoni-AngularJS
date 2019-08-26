@@ -20,11 +20,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
             url: '/muthonispeaks',
             templateUrl: 'views/muthonispeaks.html'
         })
-        
-        $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
-        });
+        .state('muthoniseason2',{
+            url: '/muthoniseason2',
+            templateUrl: 'views/muthoni-season2.html'
+        })
 });
 
 myApp.controller('milestoneScroll', function ($scope, $location, $anchorScroll) {

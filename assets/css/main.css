@@ -44,8 +44,6 @@ header {
       width: 30px;
       height: 30px;
       cursor: pointer; }
-    header .top-nav .top-nav__menu_inactive {
-      display: none; }
   header .top-hr {
     margin-top: 16px;
     border: 0.3px solid #362d29;
@@ -71,7 +69,7 @@ footer {
       color: #987362;
       line-height: 24px;
       white-space: nowrap; }
-      footer li a:hover ~ .inert-line {
+      footer li a:not(.disable-hover):hover ~ .inert-line {
         animation: above 0.4s ease-out;
         background: #987362;
         display: block;
@@ -155,7 +153,8 @@ p {
     height: 20px;
     left: 40%;
     bottom: 20%;
-    z-index: 2; }
+    z-index: 2;
+    cursor: pointer; }
   .year-milestones-section .year-milestones-section__details {
     position: absolute;
     top: 20%;
@@ -190,14 +189,16 @@ p {
     width: 20px;
     height: 20px;
     left: 40%;
-    top: 25%; }
+    top: 25%;
+    cursor: pointer; }
   .child-milestones-section .down-button {
     position: absolute;
     width: 20px;
     height: 20px;
     left: 40%;
     bottom: 20%;
-    z-index: 2; }
+    z-index: 2;
+    cursor: pointer; }
   .child-milestones-section .child-milestones-section__details {
     position: absolute;
     top: 35%;
@@ -232,14 +233,16 @@ p {
     width: 20px;
     height: 20px;
     left: 40%;
-    top: 25%; }
+    top: 25%;
+    cursor: pointer; }
   .work-milestones-section .down-button {
     position: absolute;
     width: 20px;
     height: 20px;
     left: 40%;
     bottom: 20%;
-    z-index: 2; }
+    z-index: 2;
+    cursor: pointer; }
   .work-milestones-section .work-milestones-section__details {
     position: absolute;
     top: 35%;
