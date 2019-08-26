@@ -1,71 +1,79 @@
-   <div id='section1'>
-       <div class='year-milestones-section main-container'>
-           <a href='/#!/milestones#section2'><img src='assets/images/small/down-arrow.svg' alt='Up Arrow'
-                   class='down-button'></a>
+<div ng-controller='milestoneScroll'>
 
-           <div class='year-milestones-section__details'>
+    <div id='section1'>
+        <div class='year-milestones-section main-container'>
+            <img src='assets/images/small/down-arrow.svg' alt='Up Arrow' class='down-button'
+                ng-click='scrollTo("section2")'>
 
-               <p class='year-milestones-section__2015'> 2015 </p>
-               <h4> FEBRUARY </h4>
-               <p class='year-milestones-section__text'> Muthoni Njoba became the first Kenyan Make-up Artist to be
-                   assigned as
-                   the Lead Brand Ambassador of an
-                   International cosmetic brand. This makes her the 3rd Make-up Artist, in all of Africa, recruited
-                   by
-                   L’Oreal to be the Brand Ambassador and Official Make-up Artist of Maybelline New York Kenya.</p>
-           </div>
-       </div>
-   </div>
+            <div class='year-milestones-section__details'>
 
-   <div id='section2'>
-       <div class='child-milestones-section main-container'>
-           <a href='/#!/milestones#section1'><img src='assets/images/small/up-arrow.svg' alt='Up Arrow'
-                   class='up-button'></a>
-           <a href='/#!/milestones#section3'><img src='assets/images/small/down-arrow.svg' alt='Down Arrow'
-                   class='down-button'></a>
+                <p class='year-milestones-section__2015'> 2015 </p>
+                <h4> FEBRUARY </h4>
+                <p class='year-milestones-section__text'> Muthoni Njoba became the first Kenyan Make-up Artist to be
+                    assigned as
+                    the Lead Brand Ambassador of an
+                    International cosmetic brand. This makes her the 3rd Make-up Artist, in all of Africa, recruited
+                    by
+                    L’Oreal to be the Brand Ambassador and Official Make-up Artist of Maybelline New York Kenya.</p>
+            </div>
+        </div>
+    </div>
 
-           <div class='child-milestones-section__details'>
 
-               <h4 class='child-milestones-section__title'> The Journey </h4>
-               <p class='child-milestones-section__subtitle'> THINGS I HAVE ACHIEVED ALONG THE WAY </p>
+    <div id='section2'>
+        <div class='child-milestones-section main-container'>
+            <img src='assets/images/small/up-arrow.svg' alt='Up Arrow' class='up-button'
+                ng-click='scrollTo("section1")'>
+            <img src='assets/images/small/down-arrow.svg' alt='Down Arrow' class='down-button'
+                ng-click='scrollTo("section3")'>
 
-               <div class='child-milestones-section__achievements'>
-                   <p> 1993-January</p>
-                   <p> Muthoni Njoba discovered her passion for makeup at just 9 years. At this age she was
-                       sure
-                       she
-                       wanted
-                       to be a makeup artist</p>
-                   <p> 2006- September</p>
-                   <p> After completing her undergraduate Degree in Communications, Media, Culture & Psychology
-                       at
-                       Oxford
-                       Brookes University, England, she moved back home eager to pursue a career in Makeup.
-               </div>
-           </div>
-       </div>
-   </div>
+            <div class='child-milestones-section__details'>
 
-   <div id='section3'>
-       <div class='work-milestones-section main-container'>
-           <a href='/#!/milestones#section2'><img src='assets/images/small/up-arrow.svg' alt='Down Arrow'
-                   class='up-button'></a>
-           <a href='/#!/milestones#section1'><img src='assets/images/small/down-arrow.svg' alt='Up Arrow' class='down-button'></a>
-           <div class='work-milestones-section__details'>
+                <h4 class='child-milestones-section__title'> The Journey </h4>
+                <p class='child-milestones-section__subtitle'> THINGS I HAVE ACHIEVED ALONG THE WAY </p>
 
-               <div class='work-milestones-section__achievements'>
-                   <p> 2007-March</p>
-                   <p> After completing her undergraduate Degree in Communications, Media, Culture & Psychology at
-                       Oxford
-                       Brookes University, England, she moved back home eager to pursue a career in Makeup.</p>
-                   <p> 2008- February</p>
-                   <p> She then opted to continue working as a Make-up Artist part time as she worked at Centium
-                       Investment, for two years to gain a better understanding of the corporate world.</p>
-                   <p> 2011- January</p>
-                   <p> Muthoni left corporate to pursue Make-up full time as a Freelance Makeup Artist</p>
-               </div>
-           </div>
-       </div>
-   </div>
+                <div class='child-milestones-section__achievements'>
+                    <p> 1993-January</p>
+                    <p> Muthoni Njoba discovered her passion for makeup at just 9 years. At this age she was
+                        sure
+                        she
+                        wanted
+                        to be a makeup artist</p>
+                    <p> 2006- September</p>
+                    <p> After completing her undergraduate Degree in Communications, Media, Culture & Psychology
+                        at
+                        Oxford
+                        Brookes University, England, she moved back home eager to pursue a career in Makeup.
+                </div>
+            </div>
+        </div>
+    </div>
 
-   <footer ng-include=" 'footer.html' "></footer>
+    <div id='section3'>
+        <div class='work-milestones-section main-container'>
+            <img src='assets/images/small/up-arrow.svg' alt='Down Arrow' class='up-button'
+                ng-click='scrollTo("section2")'>
+            <img src='assets/images/small/down-arrow.svg' alt='Up Arrow' class='down-button'
+                ng-click='scrollTo("section1")'>
+            <div class='work-milestones-section__details'>
+
+                <div class='work-milestones-section__achievements'>
+                    <p> 2007-March</p>
+                    <p> After completing her undergraduate Degree in Communications, Media, Culture & Psychology
+                        at
+                        Oxford
+                        Brookes University, England, she moved back home eager to pursue a career in Makeup.</p>
+                    <p> 2008- February</p>
+                    <p> She then opted to continue working as a Make-up Artist part time as she worked at
+                        Centium
+                        Investment, for two years to gain a better understanding of the corporate world.</p>
+                    <p> 2011- January</p>
+                    <p> Muthoni left corporate to pursue Make-up full time as a Freelance Makeup Artist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer ng-include=" 'footer.html' "></footer>

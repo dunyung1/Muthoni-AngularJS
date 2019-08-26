@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ui.router']);
 
-myApp.config(function ($stateProvider, $urlRouterProvider) {
+myApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/home');
     $stateProvider
@@ -20,4 +20,16 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             url: '/muthonispeaks',
             templateUrl: 'views/muthonispeaks.html'
         })
+        
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+});
+
+myApp.controller('milestoneScroll', function ($scope, $location, $anchorScroll) {
+    $scope.scrollTo = function (scrollLocation) {
+        $location.hash(scrollLocation);
+        $anchorScroll();
+    }
 });
