@@ -7,15 +7,22 @@ var hamburgerMenu = document.querySelector('.top-nav__menu');
 var episodeBg = document.querySelector('.episode1-bg');
 var closeModal = document.querySelector('.close');
 var closeEpisode = document.querySelector('.close2');
-// var season2 = document.querySelector('.item-season2');
 var navCollection = document.querySelector('.top-nav__collection');
+var mainLogo = document.querySelector('.mainlogo');
 
-// season2.addEventListener('click', function () {
-//     if (hamburgerMenu.style.display === 'none') {
-//         hamburgerMenu.style.display = 'block';
-//         navCollection.style.display = 'none';
-//     }
-// });
+document.onload = nav_hide();
+
+function nav_hide() {
+    navCollection.style.display = 'none';
+    hamburgerMenu.style.display = 'block';
+}
+
+mainLogo.addEventListener('click', function () {
+    if (navCollection.style.display === 'none') {
+        navCollection.style.display = 'flex';
+        hamburgerMenu.style.display = 'none';
+    }
+});
 
 playBtn.addEventListener('click', function () {
     if (modalContainer.style.display === 'none') {

@@ -23,7 +23,6 @@ header {
     header .top-nav .official-logo {
       z-index: 2; }
     header .top-nav .top-nav__collection {
-      display: flex;
       margin-top: 12px;
       margin-left: 100px;
       width: 80%;
