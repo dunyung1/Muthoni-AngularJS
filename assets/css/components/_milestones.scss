@@ -1,0 +1,150 @@
+.year-milestones-section {
+    height: 100vh;
+    background-image: url(../../assets/images/new-milestone.png);
+    background-position: 120% bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: $year-milestones-color;
+    padding-left: 40px;
+    position: relative;
+
+    .down-button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 40%;
+        bottom: 20%;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .year-milestones-section__details {
+        position: absolute;
+        top: 20%;
+        width: 50%;
+        z-index: 2;
+
+        .year-milestones-section__2015 {
+            line-height: 1;
+            font-size: 300px;
+            color: $yearcolor;
+            font-family: $heading-fontType;
+        }
+
+        h4,
+        .year-milestones-section__text {
+            position: absolute;
+            left: 100px;
+            top: 70%;
+            color: #6d5042;
+        }
+
+        .year-milestones-section__text {
+            margin-top: 20px;
+        }
+    }
+}
+
+.child-milestones-section {
+    height: 100vh;
+    background-image: url(../../assets/images/new-young-makeup.png);
+    background-position: 105% bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: $child-milestones-color;
+    padding-left: 40px;
+    position: relative;
+
+    .up-button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 40%;
+        top: 25%;
+        cursor: pointer;
+    }
+
+    .down-button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 40%;
+        bottom: 20%;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .child-milestones-section__details {
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        z-index: 2;
+
+        .child-milestones-section__title {
+            font-size: 32px;
+            color: $child-milestones-title;
+        }
+
+        .child-milestones-section__subtitle {
+            font-size: 16px;
+            color: $child-milestones-title;
+            letter-spacing: 3px;
+        }
+
+        .child-milestones-section__achievements {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr 2fr;
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.work-milestones-section {
+    height: 100vh;
+    background-image: url(../../assets/images/new-black.png);
+    background-position: 105%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vh;
+    background-color: $work-milestones-color;
+    padding-left: 40px;
+    position: relative;
+
+    .up-button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 40%;
+        top: 25%;
+        cursor: pointer;
+    }
+
+    .down-button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 40%;
+        bottom: 20%;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .work-milestones-section__details {
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        z-index: 2;
+
+        .work-milestones-section__achievements {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+    }
+}
