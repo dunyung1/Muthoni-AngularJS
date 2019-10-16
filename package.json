@@ -1,9 +1,10 @@
 {
   "name": "muthoni-angularjs-master",
   "version": "1.0.0",
-  "description": "Concept website for makeup artist Muthoni Njoba\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D,",
-  "main": "index.js",
+  "description": "Concept website",
+  "main": "Gruntfile.js",
   "dependencies": {
+    "grunt": "^1.0.4",
     "grunt-build-control": "^0.7.1"
   },
   "devDependencies": {},
@@ -14,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/dunyung1/Muthoni-AngularJS.git"
   },
-  "author": "Duncan Chege",
+  "author": "Dunaca",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dunyung1/Muthoni-AngularJS/issues"
